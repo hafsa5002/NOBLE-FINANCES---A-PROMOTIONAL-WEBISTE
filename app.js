@@ -12,4 +12,8 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
+app.get('/appoint',(req,res)=>{
+    res.render('appoint')
+})
+
 app.listen(3000)

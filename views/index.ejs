@@ -1,197 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- keep your own Tailwind build -->
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
 </head>
-<body class="bg-white min-h-screen">
- <header class="rounded-bl-3xl rounded-br-3xl w-full min-h-screen flex flex-col bg-green-300">
-  <!-- Navbar -->
-  <div class="mainnavbar w-full p-6 flex flex-wrap items-center justify-between">
-    <div class="logo text-xl md:text-2xl text-green-950 font-bold">NOBLE FINANCES</div>
-    <div class="options flex flex-wrap md:flex-nowrap items-center space-x-0 md:space-x-4 space-y-2 md:space-y-0 mt-4 md:mt-0">
-      <a href="#" class="text-green-950 hover:underline w-full md:w-auto text-center">Services</a>
-      <a href="#" class="bg-green-950 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800 w-full md:w-auto text-center">
-        Book an appointment
+<body class="bg-white min-h-screen overflow-x-hidden">
+  <header class="rounded-bl-3xl rounded-br-3xl w-screen min-h-screen flex flex-col bg-green-300">
+    <!-- Navbar -->
+ 
+<div class="mainnavbar w-full px-10 py-10 flex flex-col md:flex-row items-center md:justify-between ">
+  
+  <!-- Logo -->
+  <div class="logo text-xl md:text-2xl text-green-800 font- mb-3 md:mb-0 ">
+    NOBLE FINANCES
+  </div>
+
+  <!-- Options -->
+  <div class="options flex flex-col md:flex-row items-center gap-3 w-full md:w-auto">
+    <a href="#" class="text-green-950 hover:underline w-full md:w-auto text-center">
+      Services
+    </a>
+    <a href="/appoint"
+      class="bg-green-950 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800 w-full md:w-auto text-center">
+      Book an appointment
+    </a>
+  </div>
+
+</div>
+
+<!--  
+    <div class="mainnavbar w-full p-6 flex  items-center justify-between ">
+      <div class="logo text-xl md:text-2xl text-green-950 font-bold p-6">NOBLE FINANCES</div>
+      <div class="options flex flex-wrap md:flex-nowrap items-center space-x-0 md:space-x-4 space-y-2 md:space-y-0 mt-4 md:mt-0">
+        <a href="#" class="text-green-950 hover:underline w-full md:w-auto text-center">Services</a>
+        <a href="#" class="bg-green-950 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800 w-full md:w-auto text-center">
+          Book an appointment
+        </a>
+      </div>
+    </div> -->
+
+    <!-- Slogan -->
+    <div class="mainslogan flex-1 flex flex-col md:flex-row items-center justify-evenly p-4 space-y-8 md:space-y-0">
+      <!-- Text Section -->
+      <div class="text h-auto w-full md:w-3/5 flex flex-col items-start justify-center p-4">
+        <div class="uppertext text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-green-900">
+          Financial Clarity You Can Trust
+        </div>
+        <div class="lowertext text-base sm:text-lg md:text-xl mt-4 text-green-800">
+          Trusted financial guidance for every stage of life and business since 1987
+        </div>
+        <a href="#" class="mt-6 md:mt-10 bg-green-950 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800">
+          Connect with our Experts
+        </a>
+      </div>
+
+      <!-- Image Section -->
+      <div class="img h-auto w-full md:w-2/6 flex items-center justify-center bg-cover">
+        <img src="/images/EARTH.avif" alt="" class="max-w-[80%] md:max-w-[90%] h-auto object-contain">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main h-[30rem] w-full flex flex-col items-center justify-center px-4 text-center rounded-bl-2xl rounded-br-2xl">
+      <div class="services text-lg font-semibold">Services</div>
+
+      <div class="text-green-900 m-5 handle text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-tight max-w-4xl">
+        Let us handle the numbers, so you can handle your success.
+      </div>
+
+      <div class="serve mt-4 text-sm sm:text-base md:text-lg text-green-900 max-w-2xl">
+        Serving individuals and small businesses since 1987
+      </div>
+
+      <a href="#" class="mt-6 md:mt-10 bg-green-950 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800">
+        Schedule a Call
       </a>
+    </div>
+<!-- Card 1 -->
+<div class="text2 flex flex-col md:flex-row items-center bg-green-100 rounded-xl lg:h-[27rem] lg:rounded-2xl lg:ml-8 mx-auto p-4 lg:p-0 gap-6 md:gap-10 w-[92%] lg:w-[65%]">
+
+  <!-- Image Section -->
+  <div class="img flex items-center justify-center w-full md:w-[40%] h-64 md:h-auto">
+    <img src="/images/EARTH2.avif" 
+         alt="Tax preparation image" 
+         class="h-full w-full object-contain rounded-lg md:rounded-none">
+  </div>
+
+  <!-- Text Section -->
+  <div class="flex flex-col justify-center w-full md:w-[60%] gap-4">
+    <div class="text1 text-green-900 leading-snug text-2xl sm:text-3xl lg:text-4xl font-semibold">
+      Tax Preparation & Filing
+    </div>
+    <div class="text2 text-green-800 text-sm sm:text-base leading-relaxed">
+      Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.
+    </div>
+    
+    <!-- Tags Section -->
+    <div class="text3 flex flex-wrap gap-3 mt-3">
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">1099 taxes</div>
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">Dependents</div>
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">Trust Taxes</div>
     </div>
   </div>
 
-  <!-- Slogan -->
-  <div class="mainslogan flex-1 flex flex-col md:flex-row items-center justify-evenly p-4 space-y-8 md:space-y-0">
-    
-    <!-- Text Section -->
-    <div class="text h-auto w-full md:w-3/5 flex flex-col items-start justify-center p-4">
-      <div class="uppertext text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-green-900">
-        Financial Clarity You Can Trust
+</div>
+
+
+
+<!-- Card 2 -->
+<div class="text2 lg:h-[27rem] h-auto lg:w-[65%] w-[92%] lg:rounded-2xl rounded-xl lg:ml-[30rem] mx-auto mt-8 bg-green-100 flex flex-col md:flex-row items-center md:justify-evenly gap-6 p-4 lg:p-0">
+  
+  <!-- Text Section -->
+  <div class="text md:h-full h-auto md:w-[40%] w-full flex justify-center flex-col order-2 md:order-1">
+    <div class="text1 text-2xl sm:text-3xl lg:text-4xl w-full text-green-900 leading-snug">
+      IRS Audit Assistance
+    </div>
+    <div class="text2 text-sm sm:text-base text-green-800 leading-relaxed mt-2">
+      Offer expert guidance and representation to resolve tax audits and disputes with confidence.
+    </div>
+    <div class="text3 flex gap-3 flex-wrap mt-3">
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">1099 taxes</div>
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">Dependents</div>
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">Trust Taxes</div>
+    </div>
+  </div>
+
+  <!-- Image Section -->
+  <div class="img md:h-full h-auto md:w-[40%] w-full flex items-center justify-center order-1 md:order-2">
+    <img src="/images/EARTH3.avif" 
+         alt="" 
+         class="h-64 sm:h-80 md:h-full w-full object-contain md:rounded-none rounded-lg">
+  </div>
+
+</div>
+
+
+<!-- Card 3 -->
+<div class="text2 lg:h-[27rem] h-auto lg:w-[65%] w-[92%] lg:rounded-2xl rounded-xl lg:ml-8 mx-auto mt-8 bg-green-100 flex flex-col md:flex-row items-center md:justify-evenly gap-6 p-4 lg:p-0">
+  
+  <!-- Image Section -->
+  <div class="img md:h-full h-auto md:w-[40%] w-full flex items-center justify-center">
+    <img src="/images/EARTH4.avif" 
+         alt="" 
+         class="md:h-full h-64 w-full md:w-auto object-contain md:rounded-none rounded-lg">
+  </div>
+  
+  <!-- Text Section -->
+  <div class="text md:h-full h-auto md:w-[50%] w-full flex justify-center flex-col">
+    <div class="text1 text-2xl sm:text-3xl lg:text-4xl w-full text-green-900 leading-snug">
+      Bookkeeping & Accounting
+    </div>
+    <div class="text2 text-sm sm:text-base text-green-800 leading-relaxed mt-2">
+      Maintain organized financial records and provide clear reports to support business growth and financial health.
+    </div>
+    <div class="text3 flex gap-3 justify-start flex-wrap mt-3">
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">1099 taxes</div>
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">Dependents</div>
+      <div class="h-[2rem] px-4 bg-white text-green-800 text-sm rounded-xl flex items-center">Trust Taxes</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+    <!-- Full-bleed image -->
+    <div class="img h-[20rem] w-screen mt-10 bg-contain sm:bg-cover sm:h-[40rem]">
+      <img src="/images/nff1.webp" alt="" class="h-full w-full object-cover">
+    </div>
+
+    <!-- Full-bleed red band (unchanged visually, forced full width) -->
+<!-- Full-bleed red band (responsive) -->
+<div class="min-h-[35rem] w-screen flex flex-col md:flex-row items-center gap-8 p-8">
+
+  <!-- CARD 1 -->
+  <div class="text2 lg:h-[24rem] h-auto w-full md:w-1/2 lg:rounded-2xl rounded-xl bg-green-900 flex flex-col items-start justify-center gap-6 p-6">
+    <div class="text flex flex-col justify-center gap-6">
+      <div class="text1 text-3xl sm:text-4xl lg:text-4xl text-white leading-snug">
+        A custom built plan for you
       </div>
-      <div class="lowertext text-base sm:text-lg md:text-xl mt-4 text-green-800">
-        Trusted financial guidance for every stage of life and business since 1987
-      </div>  
-      <a href="#" class="mt-6 md:mt-10 bg-green-950 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800">
+      <div class="text2 text-sm sm:text-base lg:text-base text-white leading-relaxed">
+        At Noble Finances, we believe that tax filing should be seamless, accurate, and stress-free.
+        Our approach is centered on three key pillars: simplicity, accuracy, and security.
+      </div>
+      <div class="text3 flex gap-3 flex-wrap mt-3">
+        <a href="#" class="bg-white rounded-3xl px-5 py-2 text-green-900 text-sm hover:bg-green-800 hover:text-white text-center transition w-full sm:w-auto">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="text2 lg:h-[24rem] h-auto w-full md:w-1/2 lg:rounded-2xl rounded-xl bg-green-100 flex items-center justify-center p-4">
+    <div class="text h-full w-full flex justify-center items-center">
+      <img src="/images/EARTH5.avif" class="h-auto w-full max-h-[24rem] object-cover rounded-xl" alt="">
+    </div>
+  </div>
+
+</div>
+
+    <!-- Closing CTA -->
+    <div class="textcontainer h-[35rem] w-full flex flex-col items-center justify-center px-4">
+      <div class="text text-green-900 text-3xl sm:text-5xl lg:text-6xl text-center mb-10">
+        We believe that tax filing should be seamless,<br>
+        accurate, and stress-free. Get started with Noble<br> Finance today!
+      </div>
+      <a href="#" class="bg-green-900 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800 w-full md:w-auto text-center">
         Connect with our Experts
       </a>
     </div>
+  </main>
 
-    <!-- Image Section -->
-    <div class="img h-auto w-full md:w-2/6 flex items-center justify-center bg-cover">
-      <img src="/images/EARTH.avif" alt="" class="max-w-[80%] md:max-w-[90%] h-auto">
+  <footer>
+    <div class="mainfooter h-[25rem] w-screen bg-green-900 mt-20 flex flex-col md:flex-row items-start md:items-center justify-start md:justify-start gap-8 md:gap-20 p-10">
+      <div class="innerfoot1 h-full md:w-[50%] w-full flex flex-col justify-between gap-4">
+        <div class="top text-2xl text-white">NOBLE FINANCES</div>
+        <div class="bootom text-white">
+          Financial Clarity You Can Trust<br>
+          Trusted financial guidance for every stage of life and business since 1987
+        </div>
+      </div>
+      <div class="innerfoot2 h-full md:w-[50%] w-full flex flex-col justify-between gap-4">
+        <div class="top text-2xl text-white">
+          <div class="options flex flex-wrap md:flex-nowrap items-center space-x-0 md:space-x-4 space-y-2 md:space-y-0 mt-4 md:mt-0">
+            <a href="#" class="text-white hover:underline w-full md:w-auto text-center text-sm">Services</a>
+            <a href="" class="bg-white rounded-3xl px-5 py-2 text-green-950 text-sm hover:bg-green-800 w-full md:w-auto text-center md:hover:text-white md:hover:bg-green-800">
+              Book an appointment
+            </a>
+          </div>
+        </div>
+        <div class="bootom text-white">© 2025 All Rights Reserved</div>
+      </div>
     </div>
-
-  </div>
-</header>
-
-<main>
-  <div class="main h-[30rem] w-full  flex flex-col items-center justify-center px-4 text-center rounded-bl-2xl rounded-br-2xl">
-    
-    <!-- Services -->
-    <div class="services  text-lg  font-semibold ">Services</div>
-    
-    <!-- Main Heading -->
-    <div class="text-green-900 m-5 handle text-2xl sm:text-3xl md:text-5xl lg:text-6xl  leading-tight max-w-4xl">
-      Let us handle the numbers, so you can handle your success.
-    </div>
-    
-    <!-- Subheading -->
-    <div class="serve mt-4 text-sm sm:text-base md:text-lg text-green-900 max-w-2xl">
-      Serving individuals and small businesses since 1987
-    </div>
-
-    <a href="#" class="mt-6 md:mt-10 bg-green-950 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800">
-        Schedule a Call
-      </a>
-  </div>
-
-  <!-- ------------------------------------------------------------- -->
-  <div class="text2 h-[27rem] w-[65%] rounded-2xl ml-8 bg-green-100 flex items-center justify-evenly" >
-<div class="img h-full w-[40%]  flex items-center justify-center">
-  <img src="/images/EARTH2.avif" alt="">
-</div>
-<div class="text h-full w-[40%]  flex  justify-center flex-col">
-<div class="text1 h-[8rem]  text-4xl w-[80%] text-green-900">Tax Preparation & Filing</div>
-<div class="text2 h-[8rem]  text-base text-green-800">Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</div>
-<div class="text3  flex gap-3  justify-start">
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">1099 taxes</div>
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">Dependents</div>
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">Trust Taxes</div>
-
-</div>
-
-</div>
-
-  </div>
-
-<!-- -------------------- -->
-
-  
-  <div class="text2 h-[27rem] w-[65%] rounded-2xl ml-[30rem] mt-8  bg-green-100 flex items-center justify-evenly" >
-
-<div class="text h-full w-[40%]  flex  justify-center flex-col">
-<div class="text1 h-[8rem]  text-4xl w-full text-green-900">IRS Audit Assistance</div>
-<div class="text2 h-[8rem]  text-base text-green-800">Offer expert guidance and representation to resolve tax audits and disputes with confidence.</div>
-<div class="text3  flex gap-3  justify-start">
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">1099 taxes</div>
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">Dependents</div>
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">Trust Taxes</div>
-
-</div>
-
-</div>
-<div class="img h-full w-[40%]  flex items-center justify-center">
-  <img src="/images/EARTH3.avif" alt="">
-</div>
-  </div>
-  <!-- ---------------------------- -->
-     <div class="text2 h-[27rem] w-[65%] mt-8 rounded-2xl ml-8 bg-green-100 flex items-center justify-evenly" >
-<div class="img h-full w-[40%]  flex items-center justify-center">
-  <img src="/images/EARTH4.avif" alt="">
-</div>
-<div class="text h-full w-[40%]  flex  justify-center flex-col">
-<div class="text1 h-[8rem]  text-4xl w-[80%] text-green-900">Bookkeeping & Accounting</div>
-<div class="text2 h-[8rem]  text-base text-green-800">Maintain organized financial records and provide clear reports to support business growth and financial health.</div>
-<div class="text3  flex gap-3  justify-start">
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">1099 taxes</div>
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">Dependents</div>
-<div class="h-[2rem] w-[6rem] bg-white text-green-800 text-sm rounded-xl flex items-center justify-center">Trust Taxes</div>
-
-</div>
-
-</div>
-
-  </div>
-  <!-- ------------------------------- -->
-<!-- img section -->
-<div class="img h-screen w-screen mt-10">
-  <img src="/images/nff1.webp" alt="" class="h-full w-full object-cover">
-</div>
-
-<!-- ------------------------------------------------ -->
-
-<div class="textcontainer h-screen w-full flex flex-col items-center justify-center">
-
-<div class="text text-green-900 text-6xl text-center mb-10 ">
-  We believe that tax filing should be seamless,
-  <br>
-   accurate, and stress-free. Get started with Noble
-   <br> Finance today!
-</div>
-
-
-     <a href="#" class="bg-green-900 rounded-3xl px-5 py-2 text-white text-sm hover:bg-green-800 w-full md:w-auto text-center">
-        Book an appointment
-      </a>
-
-</div>
-
-</main>
-<footer>
-<div class="mainfooter h-[25rem] w-screen bg-green-900 mt-20 flex items-center justify-start gap-20">
-<div class="innerfoot1  h-full w-[50%] p-10 flex flex-col justify-between">
-<div class="top text-2xl text-white">NOBLE FINANCES</div>
-<div class="bootom text-white">Financial Clarity You Can Trust
-  <br>
-
-Trusted financial guidance for every stage of life and business since 1987
-</div>
-
-</div>
-<div class="innerfoot2  h-full w-[50%] flex flex-col justify-between p-10">
-<div class="top text-2xl text-white">
- <div class="options flex flex-wrap md:flex-nowrap items-center space-x-0 md:space-x-4 space-y-2 md:space-y-0 mt-4 md:mt-0">
-      <a href="#" class="text-white hover:underline w-full md:w-auto text-center text-sm">Services</a>
-      <a href="#" class="bg-white rounded-3xl px-5 py-2 text-green-950 text-sm hover:bg-green-800 w-full md:w-auto text-center">
-        Book an appointment
-      </a>
-    </div>
-
-</div>
-<div class="bootom text-white">
-  © 2025 All Rights Reserved
-</div>
-</div>
-</div>
-
-</footer>
-
-
-</body>
-
-<!-- <body class="bg-green-300 h-full w-full">
-   <header class="h-28  w-full " >
-
-<div class="mainnavbar w-screen p-10 bg-yellow-300 h-1/2 flex items-center justify-between ">
-    <div class="logo  h-10 flex items-center justify-center text-xl text-green-950 font-bold ">NOBLE FINANCES</div>
-    <div class="options  w-1/5  flex items-center justify-end p-5">
-        <div class="op1  mr-3 text-green-950 "><a href="">Services</a></div>
-        <div class="op2 bg-green-950 rounded-3xl h-10 text-white text-sm w-40 flex items-center justify-center">Book an appointment</div>
-    </div>
-</div>
-<div class="mainslogan  h-2/3 w-screen">
-
-</div>
-   </header>
-     -->
+  </footer>
+ 
 </body>
 </html>
